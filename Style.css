@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:"Averta CY W10";
 }
 html,body{
     width: 100%;
@@ -10,4 +11,118 @@ html,body{
 
 #main{
     width: 100%;
+    background-color: #fff;
+}
+
+#Home{
+    width: 100%;
+    min-height: 100vh;
+    /* border: 2px solid red;        */
+}
+#nav{
+    width: 100%;
+    padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+#nav img{
+    width: 100px;
+
+
+}
+
+#nav  a{
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    font-size: 1.1vw;
+    letter-spacing: -1px;
+    
+}
+#nav #right{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+#nav i{
+    margin-top: 3px;
+    font-size: 20px;
+}
+#Home #Home_main{
+    width: 100%;
+    padding: 15vw 15vw;
+}
+
+#Home_main h1 {
+   font-weight: 400;
+   font-size: 1.5vw;
+   letter-spacing: -.1vw;
+}
+
+.heading{
+    display: flex;
+    gap: 40px;
+}
+#Home_main .heading h1{
+    font-size: 7vw;
+    font-weight: 900;
+    letter-spacing:-2px;
+    line-height: 1;
+
+    
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+#Home_last{
+    padding: 5vw 15vw;
+}
+#Home_last p{
+    width: 70%;
+  font-size: 1.6vw;
+font-weight: 400;
+letter-spacing: -.08;
+}
+
+#Home_last p::selection{
+    color: #fff;
+    background-color: #000;
+}
+
+
+#featured{
+  padding: 10vw 15vw ;
+}
+
+#featured h1 {
+    line-height: 1;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+#featured h1:nth-child(2){
+        color: transparent;
+        -webkit-text-stroke: 1px #000  ;
+}
+
+#fimages{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;  
+    margin-top: 5vw;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+#fleft{
+ width: 45%;
+ min-height: inherit;
+ border: 2px solid rgb(54, 75, 169);
+}
+#fright{
+    width: 45%;
+    min-height: inherit;
+    border: 2px solid green;
 }

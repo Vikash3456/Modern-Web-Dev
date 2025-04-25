@@ -82,6 +82,10 @@ html,body{
     -webkit-text-stroke: 1px #000;
 }
 
+#Home_main .heading h1:hover{
+    color: #000;
+}
+
 #Home_last{
     padding: 5vw 15vw;
 }
@@ -166,13 +170,13 @@ letter-spacing: -.08;
    height: 90%;
    background-color: red;
 }
-#btndiv{
+.btndiv{
     display: flex;
     flex-direction: column;
  align-items: center;
 }
 
-#btndiv button{
+.btndiv button{
     padding: 1vw 2.5vw;
     border-radius: 100px;
    border: 2px solid #e6e6e6;

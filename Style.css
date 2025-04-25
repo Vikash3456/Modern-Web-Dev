@@ -13,7 +13,12 @@ html,body{
     width: 100%;
     background-color: #fff;
 }
-
+*{
+    ::selection{
+        color: #fff;
+        background-color: #000;
+    } 
+}
 #Home{
     width: 100%;
     min-height: 100vh;
@@ -97,32 +102,130 @@ letter-spacing: -.08;
   padding: 10vw 15vw ;
 }
 
-#featured h1 {
+.fheading>h1 {
     line-height: 1;
     font-size: 4vw;
     font-weight: 400;
 }
 
-#featured h1:nth-child(2){
+.fheading>h1:nth-child(2){
         color: transparent;
         -webkit-text-stroke: 1px #000  ;
 }
 
-#fimages{
+#fimages{ 
     display: flex;
     width: 100%;
-    min-height: 100vh;  
+    height: 100vh;      
     margin-top: 5vw;
     justify-content: space-between;
     /* border: 2px solid red; */
 }
 #fleft{
  width: 45%;
- min-height: inherit;
- border: 2px solid rgb(54, 75, 169);
+ height: inherit;
+ /* border: 2px solid rgb(54, 75, 169); */
+ overflow:hidden;
+}
+
+.fleft_elem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+  /* background-color: red;    */
+
+}
+
+.fleft_elem h1{
+    font-size:2.5vw;
+    line-height: 1;
+    font-weight: 400;
+  text-transform: capitalize;
+  margin: 1.5vw 0 ;
+}
+.fleft_elem h3{
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+.fleft_elem h4{
+    opacity: .5;
 }
 #fright{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     width: 45%;
-    min-height: inherit;
-    border: 2px solid green;
+    height: inherit;
+    /* border: 2px solid green; */
+}
+
+#fright .images{
+   width: 90%;
+   height: 90%;
+   background-color: red;
+}
+#btndiv{
+    display: flex;
+    flex-direction: column;
+ align-items: center;
+}
+
+#btndiv button{
+    padding: 1vw 2.5vw;
+    border-radius: 100px;
+   border: 2px solid #e6e6e6;
+   background-color: #fff;
+   font-size: 1vw;
+   font-weight: 400;
+   letter-spacing: -.5px;
+}
+#dev{
+    width: 100%;
+    padding: 5vw 15vw;
+}
+
+#dev h1{
+    font-size: 3.8vw;
+    font-weight: 400;
+    width: 60%;
+    line-height: 1;
+}
+#dev p{
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    letter-spacing: -.5px;
+    width: 60%;
+}
+
+#slides{
+    padding: 3vw 10vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+.slide {
+   width:30%;
+
+}
+
+.slide  .img{
+    width: 100%;
+    height: 200px;
+    overflow:hidden;
+    border-radius: 5px;
+    background-color: aquamarine;
+}
+.slide .img img{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+}
+.slide .tag{
+width: fit-content;
+  padding: 10px 22px;
+    margin:20px 0 ;
+    border-radius: 100px;
+    background-color: #e7e7e7;
 }

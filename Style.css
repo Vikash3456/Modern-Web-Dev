@@ -164,16 +164,20 @@ letter-spacing: -.08;
     height: inherit;
     /* border: 2px solid green; */
 }
-
-#fright .images{
-   width: 90%;
-   height: 90%;
-   background-color: red;
+#fright .images {
+    width: 90%;
+    height: 90%;
+}
+#fright .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .btndiv{
     display: flex;
     flex-direction: column;
  align-items: center;
+ justify-items: center;
 }
 
 .btndiv button{

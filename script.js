@@ -1,7 +1,7 @@
 
 Shery.mouseFollower();
 Shery.makeMagnet('.magnet')
-
+Shery.makeMagnet('.tag')
 // Shery.hoverWithMediaCircle(".hover-target" /* Element to target.*/, {
 //     images: ["image1.jpg", "image2.jpg", "image3.jpg"] /*OR*/,
 //     //videos: ["video1.mp4", "video2.mp4"],
@@ -25,7 +25,8 @@ gsap.to(".fleft_elem",{
 
 let sections=document.querySelectorAll(".fleft_elem")
 Shery.imageEffect(".images", {
-    style: 3,
+    style: 5,
+    // config: { onMouse: { value: 1 } },                
     slideStyle: (setScroll) => {
       sections.forEach(function(section,index){
         ScrollTrigger.create({
@@ -39,3 +40,23 @@ Shery.imageEffect(".images", {
       })
     },
   });
+
+  Shery.textAnimate(".hhh" /* Element to target.*/, {
+    //Parameters are optional.
+    style: 1,
+    y: 10,
+    delay: 0.1,
+    duration: 2,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    multiplier: 0.1,
+  });
+
+//   Shery.imageEffect(".slide .Img", {
+//     style: 6,
+//     config: { // Correct config structure
+//         transition: {
+//             duration: 0.7,
+//             ease: "power2.inOut"
+//         }
+//     }
+// });
